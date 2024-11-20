@@ -1,0 +1,15 @@
+:root {
+  --pf-black: #22222e;
+  --pf-purple: #393a5a;
+  --pf-light-purple: #706f8e;
+  --pf-lila: #ada9ba;
+  --pf-white: #e9e9e9;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
