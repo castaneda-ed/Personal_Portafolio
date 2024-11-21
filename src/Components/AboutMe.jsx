@@ -2,16 +2,28 @@ import { useEffect, useRef, useState } from "react";
 import "../styles/AboutMe.css";
 
 export default function AboutMe() {
-  //   const slideRef = useRef(null);
-  //   const [currentIndex, setCurrentIndex] = useState(0);
+  const sliderRef = useRef(null);
 
-  //   useEffect(() => {
-  //     const slider = slideRef.current;
-  //     const icons = slider.children;
-  //     const iconWidth = icons[0].offsetWidth + parseFloat(getComputedStyle(slider).gap)
-  //     const totalIcons = icons.length;
+  useEffect(() => {
+    const slider = sliderRef.current;
+    if (!slider) return;
 
-  //   })
+    let offset = 0; // Start position
+    const step = 0.5; // Smaller step for smoother animation
+    const originalWidth = slider.scrollWidth / 2; // Half of the duplicated content
+
+    const animateSlider = () => {
+      offset -= step; // Move left
+      if (Math.abs(offset) >= originalWidth) {
+        offset = 0; // Reset to create a seamless loop
+      }
+      slider.style.transform = `translateX(${offset}px)`;
+      requestAnimationFrame(animateSlider); // Recursive animation loop
+    };
+
+    requestAnimationFrame(animateSlider); // Start animation
+    return () => cancelAnimationFrame(animateSlider); // Cleanup on component unmount
+  }, []);
 
   return (
     <div className="about-container">
@@ -27,56 +39,102 @@ export default function AboutMe() {
         perfectioning my skills as I love the challenge of problem-solving until
         I get it right and bringing ideas to life through code.
       </p>
-      <p>
-        <div className="slider-container">
-          <div className="slider">
-            <img
-              className="slider-icon js"
-              src="../../public/icons/js-icon.png"
-              alt="javascripticon"
-            />
-            <img
-              className="slider-icon"
-              src="../../public/icons/react-icon.png"
-              alt="react icon"
-            />
-            <img
-              className="slider-icon"
-              src="../../public/icons/html-icon.png"
-              alt="html icon"
-            />
-            <img
-              className="slider-icon"
-              src="../../public/icons/css-icon.png"
-              alt="css icon"
-            />
-            <img
-              className="slider-icon"
-              src="../../public/icons/redux-icon.png"
-              alt="redux icon"
-            />
-            <img
-              className="slider-icon"
-              src="../../public/icons/express-icon.png"
-              alt="express icon"
-            />
-            <img
-              className="slider-icon"
-              src="../../public/icons/nodejs-icon.png"
-              alt="nodejs icon"
-            />
-            <img
-              className="slider-icon"
-              src="../../public/icons/git-icon.png"
-              alt="git icon"
-            />
-            <img
-              className="slider-icon"
-              src="../../public/icons/github-icon.png"
-              alt="github icon"
-            />
-          </div>
+      <div className="slider-container">
+        <div className="slider" ref={sliderRef}>
+          <img
+            className="slider-icon js"
+            src="../../public/icons/js-icon.png"
+            alt="javascripticon"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/react-icon.png"
+            alt="react icon"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/html-icon.png"
+            alt="html icon"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/css-icon.png"
+            alt="css icon"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/redux-icon.png"
+            alt="redux icon"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/express-icon.png"
+            alt="express icon"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/nodejs-icon.png"
+            alt="nodejs icon"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/git-icon.png"
+            alt="git icon"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/github-icon.png"
+            alt="github icon"
+          />
+          {/* Duplicated icons for seamless scrolling */}
+          <img
+            className="slider-icon"
+            src="../../public/icons/js-icon.png"
+            alt="JavaScript"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/react-icon.png"
+            alt="React"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/html-icon.png"
+            alt="HTML"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/css-icon.png"
+            alt="CSS"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/redux-icon.png"
+            alt="Redux"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/express-icon.png"
+            alt="Express"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/nodejs-icon.png"
+            alt="Node.js"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/git-icon.png"
+            alt="Git"
+          />
+          <img
+            className="slider-icon"
+            src="../../public/icons/github-icon.png"
+            alt="GitHub"
+          />
         </div>
+      </div>
+      <p>
         <span className="big-letter">W</span>hen I'm not coding, I enjoy running
         to clear my head, gaming for fun and strategy, and immersing myself in
         the world of music and movies to relax. I'm also an audiobook enthusiast
@@ -86,7 +144,7 @@ export default function AboutMe() {
         reflected in my approach to work and problem solving.
       </p>
 
-      <a className="transparent-button cv-button" role="button" href="">
+      <a className="transparent-button-cv-button" role="button" href="">
         Download CV
       </a>
     </div>

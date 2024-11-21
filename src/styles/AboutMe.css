@@ -46,7 +46,7 @@
 /* --- Slider Icons --- */
 
 .slider-container {
-  width: 100%;
+  width: 90%;
   overflow: hidden;
   border-radius: 10px;
   display: flex;
@@ -59,9 +59,7 @@
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((33% / 3));
-  gap: 1.5rem;
   padding: 1rem;
-  animation: slide 20s linear infinite;
 }
 
 .slider-icon {
@@ -73,6 +71,23 @@
   width: 200px;
   text-align: center;
   margin-top: -1rem;
+}
+
+.transparent-button-cv-button {
+  border: 1px solid #303030;
+  color: #303030;
+  font-weight: 600;
+  margin-top: 1.75rem;
+  padding: 8px 15px;
+  transition: 0.4s ease-in-out;
+  align-self: center;
+  width: 200px;
+  text-align: center;
+}
+
+.transparent-button-cv-button:hover {
+  background-color: var(--pf-blue);
+  color: var(--pf-white);
 }
 
 @media screen and (max-width: 390px) {

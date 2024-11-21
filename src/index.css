@@ -24,3 +24,25 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+@media screen and (max-width: 250px) {
+  h1,
+  h2,
+  h3,
+  h5,
+  p,
+  ul {
+    font-size: 0.8rem;
+  }
+
+  .transparent-button-cv-button {
+    padding: 5px 10px;
+    max-width: 125px;
+    font-size: 12px;
+  }
+
+  .navbar-brand,
+  .footer-brand {
+    max-height: 40px;
+  }
+}
