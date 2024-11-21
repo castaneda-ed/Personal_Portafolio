@@ -5,6 +5,7 @@
   --pf-brown: #b09163;
   --pf-light-gray: #e5e5e5;
   --pf-dark-gray: #6c757e;
+  --pf-black: #303030;
 }
 
 *,
@@ -23,6 +24,3 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
-/* .main-container {
-} */
