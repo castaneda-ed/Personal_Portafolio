@@ -2,6 +2,7 @@ header {
   background-color: var(--pf-light-gray);
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .navbar {
@@ -15,7 +16,7 @@ header {
 }
 
 .navbar-brand {
-  color: var(--pf-blue);
+  height: 45px;
 }
 
 .toggler-icon {
@@ -69,7 +70,7 @@ header {
   background-color: var(--pf-white);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .navbar {
     margin: 0 1rem;
   }
@@ -86,7 +87,7 @@ header {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .nav-list {
     display: flex;
     gap: 2rem;
@@ -97,6 +98,6 @@ header {
   }
 
   .navbar {
-    width: 70%;
+    width: 80%;
   }
 }

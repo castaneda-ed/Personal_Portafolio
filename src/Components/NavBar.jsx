@@ -11,7 +11,11 @@ export default function NavBar() {
     <header>
       <nav className="navbar">
         <a href="/" className="navbar-brand">
-          <h1>Edwin.</h1>
+          <img
+            className="navbar-brand"
+            src="../../public/edwin-logo.png"
+            alt=""
+          />
         </a>
         <ul className={`nav-list ${isMenuOpen ? "open" : ""}`}>
           <li>

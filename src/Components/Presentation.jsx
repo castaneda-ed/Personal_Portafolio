@@ -60,6 +60,11 @@ export default function Presentation() {
         Im a<span className="typing-effect">{text}</span>
         <span className="cursor"></span>
       </h3>
+      <img
+        className="edwin-picture"
+        src="../../public/edwin-not-cropped.jpg"
+        alt="Edwin Picture"
+      />
       <a href="#" className="transparent-button">
         Contact Me
       </a>

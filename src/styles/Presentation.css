@@ -6,6 +6,12 @@
   font-size: 22px;
 }
 
+.edwin-picture {
+  height: auto;
+  max-height: 150px;
+  border-radius: 50%;
+}
+
 .presentation-container {
   background-color: var(--pf-light-gray);
   display: flex;
