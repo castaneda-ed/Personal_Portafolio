@@ -18,18 +18,23 @@ export default function NavBar() {
           />
         </a>
         <ul className={`nav-list ${isMenuOpen ? "open" : ""}`}>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Portfolio</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
+          <a href="#">
+            <li>Home </li>
+          </a>
+
+          <a href="#">
+            {" "}
+            <li>About </li>
+          </a>
+
+          <a href="#">
+            {" "}
+            <li>Portfolio</li>
+          </a>
+
+          <a href="#">
+            <li>Contact</li>
+          </a>
         </ul>
         <button
           className="navbar-toggler"
