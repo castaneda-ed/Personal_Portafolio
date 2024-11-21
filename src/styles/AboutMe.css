@@ -1,5 +1,8 @@
 .about-container {
   margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .about-container h2 {
@@ -27,11 +30,90 @@
 
 .about-container p {
   font-size: 15px;
-  margin-bottom: 25px;
+
   padding: 0 2.5rem;
   font-weight: 500;
   line-height: 24px;
 
   font-family: Open Sans, sans-serif;
   color: var(--pf-dark-gray);
+}
+
+.about-container p:first-of-type {
+  margin-bottom: 25px;
+}
+
+/* --- Slider Icons --- */
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.slider {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((33% / 3));
+  gap: 1.5rem;
+  padding: 1rem;
+  animation: slide 20s linear infinite;
+}
+
+.slider-icon {
+  height: 100px;
+}
+
+.cv-button {
+  align-self: center;
+  width: 200px;
+  text-align: center;
+  margin-top: -1rem;
+}
+
+@media screen and (max-width: 390px) {
+  .about-container h2 {
+    font-size: 20px;
+
+    font-weight: 600;
+  }
+
+  .big-letter {
+    font-size: 50px;
+    height: 40px;
+  }
+
+  .about-container p {
+    font-size: 14px;
+    padding: 0 1rem;
+    line-height: 20px;
+  }
+
+  .slider-icon {
+    height: 75px;
+  }
+
+  .slider-container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about-container {
+    max-width: 80%;
+    justify-self: center;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-800px);
+  }
 }
