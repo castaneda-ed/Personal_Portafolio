@@ -1,9 +1,11 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import NavBar from "./Components/NavBar";
+import Presentaion from "./Components/Presentation";
 
-function App() {
-  return;
+export default function App() {
+  return (
+    <main className="main-container">
+      <NavBar />
+      <Presentaion />
+    </main>
+  );
 }
-
-export default App;

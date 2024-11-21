@@ -1,0 +1,28 @@
+:root {
+  --pf-blue: #22333b;
+  --pf-white: #ffffff;
+  --pf-light-blue: #788daa;
+  --pf-brown: #b09163;
+  --pf-light-gray: #e5e5e5;
+  --pf-dark-gray: #6c757e;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* .main-container {
+} */
