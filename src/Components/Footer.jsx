@@ -6,7 +6,7 @@ export default function Footer() {
       <a href="/">
         <img
           className="footer-brand"
-          src="../../public/edwin-logo.png"
+          src="../../public/edwin-logo.jpg"
           alt=""
         />
       </a>

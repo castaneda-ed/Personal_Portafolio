@@ -13,7 +13,7 @@ export default function NavBar() {
         <a href="/" className="navbar-brand">
           <img
             className="navbar-brand"
-            src="../../public/edwin-logo.png"
+            src="../../public/edwin-logo.jpg"
             alt=""
           />
         </a>

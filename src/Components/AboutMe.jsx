@@ -131,7 +131,11 @@ export default function AboutMe() {
         reflected in my approach to work and problem solving.
       </p>
 
-      <a className="transparent-button-cv-button" role="button" href="">
+      <a
+        className="transparent-button-cv-button"
+        role="button"
+        href="https://www.dropbox.com/scl/fi/ikz188lgjap24qdn6iio6/Edwin_Castaneda_Resume.pdf?rlkey=yl2elagyd4iibk1k3q9duy53j&st=fov1agwe&dl=1"
+      >
         Download CV
       </a>
     </div>
