@@ -4,7 +4,11 @@ export default function Footer() {
   return (
     <footer>
       <a href="/">
-        <img className="footer-brand" src="/public/edwin-logo.png" alt="" />
+        <img
+          className="footer-brand"
+          src="../../public/edwin-logo.png"
+          alt=""
+        />
       </a>
 
       <ul className="footer-nav-list">
