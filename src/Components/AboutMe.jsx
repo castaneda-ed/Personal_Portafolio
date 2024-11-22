@@ -8,32 +8,32 @@ export default function AboutMe() {
     const slider = sliderRef.current;
     if (!slider) return;
 
-    let offset = 0; // Start position
-    const step = 0.5; // Smaller step for smoother animation
-    const originalWidth = slider.scrollWidth / 2; // Half of the duplicated content
+    let offset = 0;
+    const step = 0.5;
+    const originalWidth = slider.scrollWidth / 2;
 
     const animateSlider = () => {
-      offset -= step; // Move left
+      offset -= step;
       if (Math.abs(offset) >= originalWidth) {
-        offset = 0; // Reset to create a seamless loop
+        offset = 0;
       }
       slider.style.transform = `translateX(${offset}px)`;
-      requestAnimationFrame(animateSlider); // Recursive animation loop
+      requestAnimationFrame(animateSlider);
     };
 
-    requestAnimationFrame(animateSlider); // Start animation
-    return () => cancelAnimationFrame(animateSlider); // Cleanup on component unmount
+    requestAnimationFrame(animateSlider);
+    return () => cancelAnimationFrame(animateSlider);
   }, []);
 
   return (
-    <div className="about-container">
+    <div id="about" className="about-container">
       <h2>Some words about me</h2>
       <p>
         I'm a budding web developer with hands-on experience in HTML, CSS,
         JavaScript, React, Node.js, Express, Git, and Redux. While I wouldn't
         consider myself an expert, I am confident in my ability to create
         functional and visually appealing web applications. I have created
-        projects both Front End and a small API using Node.js, Express, etc. As
+        projects both Front End and a small APIs using Node.js, Express, etc. As
         you will see in the projects below, showing my ability to combine
         front-end and back-end skills effectively. I'm constantly learning and
         perfectioning my skills as I love the challenge of problem-solving until
@@ -43,93 +43,80 @@ export default function AboutMe() {
         <div className="slider" ref={sliderRef}>
           <img
             className="slider-icon js"
-            src="../../public/icons/js-icon.png"
+            src="/icons/js-icon.png"
             alt="javascripticon"
           />
           <img
             className="slider-icon"
-            src="../../public/icons/react-icon.png"
+            src="/icons/react-icon.png"
             alt="react icon"
           />
           <img
             className="slider-icon"
-            src="../../public/icons/html-icon.png"
+            src="/icons/html-icon.png"
             alt="html icon"
           />
           <img
             className="slider-icon"
-            src="../../public/icons/css-icon.png"
+            src="/icons/css-icon.png"
             alt="css icon"
           />
           <img
             className="slider-icon"
-            src="../../public/icons/redux-icon.png"
+            src="/icons/redux-icon.png"
             alt="redux icon"
           />
           <img
             className="slider-icon"
-            src="../../public/icons/express-icon.png"
+            src="/icons/express-icon.png"
             alt="express icon"
           />
           <img
             className="slider-icon"
-            src="../../public/icons/nodejs-icon.png"
+            src="/icons/nodejs-icon.png"
             alt="nodejs icon"
           />
           <img
             className="slider-icon"
-            src="../../public/icons/git-icon.png"
+            src="/icons/git-icon.png"
             alt="git icon"
           />
           <img
             className="slider-icon"
-            src="../../public/icons/github-icon.png"
+            src="/icons/github-icon.png"
             alt="github icon"
           />
-          {/* Duplicated icons for seamless scrolling */}
           <img
             className="slider-icon"
-            src="../../public/icons/js-icon.png"
+            src="/icons/js-icon.png"
             alt="JavaScript"
           />
           <img
             className="slider-icon"
-            src="../../public/icons/react-icon.png"
+            src="/icons/react-icon.png"
             alt="React"
           />
+          <img className="slider-icon" src="/icons/html-icon.png" alt="HTML" />
+          <img className="slider-icon" src="/icons/css-icon.png" alt="CSS" />
           <img
             className="slider-icon"
-            src="../../public/icons/html-icon.png"
-            alt="HTML"
-          />
-          <img
-            className="slider-icon"
-            src="../../public/icons/css-icon.png"
-            alt="CSS"
-          />
-          <img
-            className="slider-icon"
-            src="../../public/icons/redux-icon.png"
+            src="/icons/redux-icon.png"
             alt="Redux"
           />
           <img
             className="slider-icon"
-            src="../../public/icons/express-icon.png"
+            src="/icons/express-icon.png"
             alt="Express"
           />
           <img
             className="slider-icon"
-            src="../../public/icons/nodejs-icon.png"
+            src="/icons/nodejs-icon.png"
             alt="Node.js"
           />
+          <img className="slider-icon" src="/icons/git-icon.png" alt="Git" />
           <img
             className="slider-icon"
-            src="../../public/icons/git-icon.png"
-            alt="Git"
-          />
-          <img
-            className="slider-icon"
-            src="../../public/icons/github-icon.png"
+            src="/icons/github-icon.png"
             alt="GitHub"
           />
         </div>

@@ -4,25 +4,21 @@ export default function Footer() {
   return (
     <footer>
       <a href="/">
-        <img
-          className="footer-brand"
-          src="../../public/edwin-logo.png"
-          alt=""
-        />
+        <img className="footer-brand" src="/public/edwin-logo.png" alt="" />
       </a>
 
       <ul className="footer-nav-list">
         <li>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#">Portfolio</a>
+          <a href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
 

@@ -85,6 +85,13 @@
   padding: 0 0.5rem;
 }
 
+.overlay a {
+  justify-self: flex-end;
+  height: 30px;
+  width: 30px;
+  color: var(--pf-white);
+}
+
 @media screen and (min-width: 550px) {
   .projects-wrapper {
     width: 100%;

@@ -11,28 +11,22 @@ export default function NavBar() {
     <header>
       <nav className="navbar">
         <a href="/" className="navbar-brand">
-          <img
-            className="navbar-brand"
-            src="../../public/edwin-logo.png"
-            alt=""
-          />
+          <img className="navbar-brand" src="/public/edwin-logo.png" alt="" />
         </a>
         <ul className={`nav-list ${isMenuOpen ? "open" : ""}`}>
-          <a href="#">
+          <a href="/" onClick={toggleMenu}>
             <li>Home </li>
           </a>
 
-          <a href="#">
-            {" "}
+          <a href="#about" onClick={toggleMenu}>
             <li>About </li>
           </a>
 
-          <a href="#">
-            {" "}
+          <a href="#portfolio" onClick={toggleMenu}>
             <li>Portfolio</li>
           </a>
 
-          <a href="#">
+          <a href="#contact" onClick={toggleMenu}>
             <li>Contact</li>
           </a>
         </ul>

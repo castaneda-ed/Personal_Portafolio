@@ -1,4 +1,5 @@
 import AboutMe from "./Components/AboutMe";
+import ContactMe from "./Components/ContactMe";
 import Footer from "./Components/Footer";
 import NavBar from "./Components/NavBar";
 import Presentaion from "./Components/Presentation";
@@ -11,6 +12,7 @@ export default function App() {
       <Presentaion />
       <AboutMe />
       <Projects />
+      <ContactMe />
       <Footer />
     </main>
   );

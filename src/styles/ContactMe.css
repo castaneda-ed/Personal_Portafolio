@@ -1,0 +1,9 @@
+.contact-container {
+  width: 90%;
+  justify-self: center;
+}
+
+form {
+  border: 1px solid black;
+  height: 500px;
+}
