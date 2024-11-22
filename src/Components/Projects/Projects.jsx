@@ -5,12 +5,10 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Pokemon Pokedex",
-      description:
-        "An app to view  a list of pokemon and search pokemon including their descriptions and types",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLEJx7kJR5PxwjKGB4Yj-mG71dJEj1jO_y0g&s",
-      projectLink: "https://www.youtube.com/",
+      title: "Convene",
+      description: "An app to register and chat with other users",
+      image: "../../Convene.png",
+      projectLink: "https://convene-app.netlify.app",
     },
     {
       id: 2,
