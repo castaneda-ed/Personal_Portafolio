@@ -14,21 +14,24 @@ export default function Projects() {
       id: 2,
       title: "Project 2",
       description: "Description of Project 2",
-      image: "../../public/coming-soon.png",
+      image:
+        "https://www.dropbox.com/scl/fi/o7pkf25fzgptg8cgxm41r/coming-soon.png?rlkey=yy65x3dr0a0cpfmfgyffcbye1&st=kz4ou5wd&dl=1",
       projectLink: "pokedex.com",
     },
     {
       id: 3,
       title: "Project 3",
       description: "Description of Project 3",
-      image: "../../public/coming-soon.png",
+      image:
+        "https://www.dropbox.com/scl/fi/o7pkf25fzgptg8cgxm41r/coming-soon.png?rlkey=yy65x3dr0a0cpfmfgyffcbye1&st=kz4ou5wd&dl=1",
       projectLink: "pokedex.com",
     },
     {
       id: 4,
       title: "Project 4",
       description: "Description of Project 4",
-      image: "../../public/coming-soon.png",
+      image:
+        "https://www.dropbox.com/scl/fi/o7pkf25fzgptg8cgxm41r/coming-soon.png?rlkey=yy65x3dr0a0cpfmfgyffcbye1&st=kz4ou5wd&dl=1",
       projectLink: "pokedex.com",
     },
   ];
