@@ -9,6 +9,8 @@ export default function Projects() {
       description: "An app to register and chat with other users",
       image: "../../Convene.png",
       projectLink: "https://convene-app.netlify.app",
+      githubFrontend: "https://github.com/wangbertha/convene-app-frontend",
+      githubBackend: "https://github.com/wangbertha/convene-app-backend",
     },
     {
       id: 2,

@@ -85,11 +85,28 @@
   padding: 0 0.5rem;
 }
 
-.overlay a {
-  justify-self: flex-end;
+.project-links {
+  align-items: baseline;
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
   height: 30px;
   width: 30px;
   color: var(--pf-white);
+}
+
+.github {
+  height: 25px;
+  width: 25px;
+  color: var(--pf-white);
+}
+
+.project-link:hover,
+.github:hover {
+  color: var(--pf-light-blue);
+  scale: 1.1;
 }
 
 @media screen and (min-width: 550px) {

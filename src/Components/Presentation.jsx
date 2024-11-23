@@ -4,11 +4,11 @@ import "../styles/Presentation.css";
 export default function Presentation() {
   const [text, setText] = useState("");
   const words = [
-    " profesional developer",
-    " profesional husband",
-    " profesional gamer",
-    " profesional person",
-    " profesional pet owner",
+    "a passionate developer",
+    "a dedicated husband",
+    "a passionate gamer",
+    "an empathetic person",
+    "a caring pet owner",
   ];
   const [wordIndex, setWordIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
@@ -57,7 +57,8 @@ export default function Presentation() {
       <h3>Hello there!</h3>
       <h1>I am Edwin</h1>
       <h3>
-        Im a<span className="typing-effect">{text}</span>
+        I'm &nbsp;
+        <span className="typing-effect">{text}</span>
         <span className="cursor"></span>
       </h3>
       <img
