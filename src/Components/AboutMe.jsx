@@ -5,24 +5,41 @@ export default function AboutMe() {
   const sliderRef = useRef(null);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
     const slider = sliderRef.current;
     if (!slider) return;
 
-    let offset = 0;
-    const step = 0.5;
-    const originalWidth = slider.scrollWidth / 2;
+    const handleImagesLoaded = () => {
+      let offset = 0;
+      const step = 0.5;
+      const originalWidth = slider.scrollWidth / 2;
 
-    const animateSlider = () => {
-      offset -= step;
-      if (Math.abs(offset) >= originalWidth) {
-        offset = 0;
-      }
-      slider.style.transform = `translateX(${offset}px)`;
+      const animateSlider = () => {
+        offset -= step;
+        if (Math.abs(offset) >= originalWidth) {
+          offset = 0;
+        }
+        slider.style.transform = `translateX(${offset}px)`;
+        requestAnimationFrame(animateSlider);
+      };
+
       requestAnimationFrame(animateSlider);
     };
 
-    requestAnimationFrame(animateSlider);
-    return () => cancelAnimationFrame(animateSlider);
+    // Check if images are already loaded
+    const images = slider.querySelectorAll("img");
+    if (Array.from(images).every((img) => img.complete)) {
+      handleImagesLoaded();
+    } else {
+      images.forEach((img) => img.addEventListener("load", handleImagesLoaded));
+    }
+
+    return () => {
+      images.forEach((img) =>
+        img.removeEventListener("load", handleImagesLoaded)
+      );
+    };
   }, []);
 
   return (
