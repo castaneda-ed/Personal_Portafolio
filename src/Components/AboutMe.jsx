@@ -151,7 +151,8 @@ export default function AboutMe() {
       <a
         className="transparent-button-cv-button"
         role="button"
-        href="https://www.dropbox.com/scl/fi/ikz188lgjap24qdn6iio6/Edwin_Castaneda_Resume.pdf?rlkey=yl2elagyd4iibk1k3q9duy53j&st=fov1agwe&dl=1"
+        href="https://drive.google.com/uc?export=download&id=1CJ2JGabBxGiykZrRJl42olh2D3wCwiQw
+"
       >
         Download CV
       </a>
