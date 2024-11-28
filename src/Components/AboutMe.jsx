@@ -19,7 +19,7 @@ export default function AboutMe() {
 
       const animateSlider = () => {
         offset -= step;
-        if (Math.abs(offset) >= originalWidth / 2) {
+        if (Math.abs(offset) >= originalWidth) {
           offset = 0;
         }
         slider.style.transform = `translateX(${offset}px)`;
