@@ -12,8 +12,8 @@ export default function AboutMe() {
 
     const handleImagesLoaded = () => {
       let offset = 0;
-      const step = 0.5;
-      const originalWidth = slider.scrollWidth / 2;
+      const step = 0.6;
+      const originalWidth = slider.scrollWidth / 2 + 24;
 
       const animateSlider = () => {
         offset -= step;
