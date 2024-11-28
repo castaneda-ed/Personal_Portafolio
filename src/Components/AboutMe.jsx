@@ -15,9 +15,11 @@ export default function AboutMe() {
       const step = 0.5;
       const originalWidth = slider.scrollWidth / 2;
 
+      slider.innerHTML += slider.innerHTML;
+
       const animateSlider = () => {
         offset -= step;
-        if (Math.abs(offset) >= originalWidth) {
+        if (Math.abs(offset) >= originalWidth / 2) {
           offset = 0;
         }
         slider.style.transform = `translateX(${offset}px)`;
