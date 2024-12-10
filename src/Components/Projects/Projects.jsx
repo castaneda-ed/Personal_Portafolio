@@ -14,11 +14,12 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: "Project 2",
-      description: "Description of Project 2",
-      image:
-        "https://www.dropbox.com/scl/fi/o7pkf25fzgptg8cgxm41r/coming-soon.png?rlkey=yy65x3dr0a0cpfmfgyffcbye1&st=kz4ou5wd&dl=1",
-      projectLink: "pokedex.com",
+      title: "Simple Calculator",
+      description:
+        "This is just a simple calculator with a preview of the result",
+      image: "../../Calculator1.png",
+      projectLink: "https://simplecalculatorbyedwin.netlify.app/",
+      githubFrontend: "https://github.com/castaneda-ed/Calculator",
     },
     {
       id: 3,
